@@ -25,5 +25,5 @@ jobs:
         uses: docker/build-push-action@v2.5.0
         with:
           context: .
-          tags: latest
-          target: contoso-website
+          tags: contoso-website/app:latest
+          push: true
