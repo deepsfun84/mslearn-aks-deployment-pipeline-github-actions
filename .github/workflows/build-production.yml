@@ -20,7 +20,7 @@ jobs:
         uses: docker/metadata-action@v3.3.0
         with:
           images: ${{ secrets.ACR_NAME }}/contoso-website
-          tags: ${GITHUB_REF#refs/*/}
+          tags: ${{GITHUB_REF#refs/*/}}
           
       - name: Docker Login
         uses: docker/login-action@v1.8.0
