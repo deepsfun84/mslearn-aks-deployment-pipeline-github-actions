@@ -16,7 +16,7 @@ jobs:
         uses: docker/metadata-action@v3.3.0
         with:
           images: ${{ secrets.ACR_NAME }}/contoso-website
-          tags: app:latest
+          tags: latest
           
       - name: Set up Buildx
         uses: docker/setup-buildx-action@v1
